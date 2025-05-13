@@ -1,0 +1,6 @@
+<!-- <p>clock works!</p> -->
+<div [ngClass]="{ 'night': isNight(), 'day': !isNight() }" style="border: 1px solid #ccc; padding: 1rem; border-radius: 8px;">
+      <ng-content></ng-content>
+      <h3>{{ timeZone }}</h3>
+      <p>{{ currentTime }}</p>
+    </div>
